@@ -1,0 +1,6 @@
+Paper,Dataset_Group,Class_Set,Model,Overall_Test_Accuracy,Metric_Basis,Comparable_To_Prototype_Overall,Notes,Overall_Test_Accuracy_Percent
+Himel & Islam (2025),Machuve / Zenodo PCR-annotated poultry fecal images,"Healthy, Cocci, NCD, Salmo",DenseNet121,0.8964,Overall 4-class test accuracy,True,"Overall model result, not disease-specific.",89.64
+Himel & Islam (2025),Machuve / Zenodo PCR-annotated poultry fecal images,"Healthy, Cocci, NCD, Salmo",MobileNet,0.8821,Overall 4-class test accuracy,True,"Overall model result, not disease-specific.",88.21
+Himel & Islam (2025),Machuve / Zenodo PCR-annotated poultry fecal images,"Healthy, Cocci, NCD, Salmo",MobileNetV2,0.8571,Overall 4-class test accuracy,True,"Overall model result, not disease-specific.",85.71
+Himel & Islam (2025),Machuve / Zenodo PCR-annotated poultry fecal images,"Healthy, Cocci, NCD, Salmo",Xception,0.8678,Overall 4-class test accuracy,True,"Overall model result, not disease-specific.",86.78
+Himel & Islam (2025),Machuve / Zenodo PCR-annotated poultry fecal images,"Healthy, Cocci, NCD, Salmo",Stacking ensemble + Extra Trees,0.9901,Overall 4-class test accuracy,True,Ensemble result.,99.00999999999999

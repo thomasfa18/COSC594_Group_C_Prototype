@@ -1,0 +1,17 @@
+Paper,Disease,Model,Precision,Recall,F1,Precision_Percent,Recall_Percent,F1_Percent
+Himel & Islam (2025),Healthy,DenseNet121,0.86,0.86,0.86,86.0,86.0,86.0
+Himel & Islam (2025),Coccidiosis,DenseNet121,0.91,0.83,0.87,91.0,83.0,87.0
+Himel & Islam (2025),Newcastle disease (NCD),DenseNet121,0.96,0.97,0.96,96.0,97.0,96.0
+Himel & Islam (2025),Salmonella,DenseNet121,0.87,0.93,0.9,87.0,93.0,90.0
+Himel & Islam (2025),Healthy,MobileNetV2,0.76,0.84,0.8,76.0,84.0,80.0
+Himel & Islam (2025),Coccidiosis,MobileNetV2,0.89,0.81,0.85,89.0,81.0,85.0
+Himel & Islam (2025),Newcastle disease (NCD),MobileNetV2,0.94,0.97,0.96,94.0,97.0,96.0
+Himel & Islam (2025),Salmonella,MobileNetV2,0.85,0.8,0.82,85.0,80.0,82.0
+Himel & Islam (2025),Healthy,Xception,0.78,0.9,0.83,78.0,90.0,83.0
+Himel & Islam (2025),Coccidiosis,Xception,0.92,0.79,0.85,92.0,79.0,85.0
+Himel & Islam (2025),Newcastle disease (NCD),Xception,0.97,0.89,0.93,97.0,89.0,93.0
+Himel & Islam (2025),Salmonella,Xception,0.84,0.9,0.87,84.0,90.0,87.0
+Himel & Islam (2025),Healthy,Stacking ensemble + Extra Trees,0.9859,1.0,0.9929,98.59,100.0,99.29
+Himel & Islam (2025),Coccidiosis,Stacking ensemble + Extra Trees,1.0,0.9857,0.9928,100.0,98.57000000000001,99.28
+Himel & Islam (2025),Newcastle disease (NCD),Stacking ensemble + Extra Trees,0.9859,1.0,0.9929,98.59,100.0,99.29
+Himel & Islam (2025),Salmonella,Stacking ensemble + Extra Trees,1.0,0.9857,0.9928,100.0,98.57000000000001,99.28
