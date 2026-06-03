@@ -68,6 +68,7 @@ The notebook performs the following steps:
 6. Optionally fine-tunes transfer-learning models (not yet implemented)
 7. Evaluates each model
 8. Saves metrics, charts, and model outputs
+9. Generates visual comparisons from in-memory results or saved CSVs
 
 ## Supported datasets
 
@@ -289,19 +290,42 @@ prototype_vs_literature_overall_accuracy.csv
 prototype_vs_literature_disease_level_metrics.csv
 ```
 
-Model saving is not currently implemented in the prototype notebook. The notebook saves experiment results, metrics, comparison tables, and charts, but trained model files are not exported by default.
-
-If future work requires model persistence, a future group can add Keras `ModelCheckpoint` callbacks or call `model.save()` after training. A suggested future output structure would be:
+TensorBoard logs are saved per model under:
 
 ```text
-data/poultry_experiment_outputs/<DATASET_NAME>/saved_models/
+data/poultry_experiment_outputs/<DATASET_NAME>_<date>_<time>/logs/
 ```
 
-Example future path:
+To view logs:
+
+```bash
+tensorboard --logdir data/poultry_experiment_outputs/<DATASET_NAME>_<date>_<time>/logs
+```
+
+## Model saving
+
+Model saving is optional and controlled by the `SAVE_MODEL` flag in the notebook globals.
+When enabled, the best weights per model (by validation loss) are saved under:
 
 ```text
-data/poultry_experiment_outputs/machuve-zenodo/saved_models/MobileNetV2/best_model.keras
+data/poultry_experiment_outputs/<DATASET_NAME>_<date>_<time>/models/
 ```
+
+Example:
+
+```text
+data/poultry_experiment_outputs/allandclive_20260602_095856/models/MobileNetV2_best.weights.h5
+```
+
+## Visualizations from saved CSVs
+
+The visualization cell in Section 7 can load saved CSV outputs directly by setting:
+
+```python
+CSV_OUTPUT_DIR = "./data/poultry_experiment_outputs/<DATASET_NAME>_<date>_<time>"
+```
+
+This enables plotting comparisons without re-running training.
 
 ## Deployment instructions for client review
 
